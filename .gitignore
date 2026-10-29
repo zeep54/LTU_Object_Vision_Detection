@@ -427,3 +427,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Python virtual environment and bytecode cache
+venv/
+__pycache__/

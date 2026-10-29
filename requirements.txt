@@ -1,0 +1,10 @@
+# Install CPU-only PyTorch first (the default build pulls in GBs of CUDA libraries):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.3
+opencv-python==5.0.0.93
+torch==2.14.1
+torchvision==0.29.1
+ultralytics==8.4.177
+roboflow==1.7.1
+dill==0.4.1
+gpiod==2.5.0
