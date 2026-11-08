@@ -1,0 +1,20 @@
+description: Ultralytics human_best model trained on /kaggle/input/v4-yaml/data.yaml
+author: Ultralytics
+date: '2026-11-07T21:30:56.688408-05:00'
+version: 8.4.177
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+head: Detect
+batch: 1
+imgsz:
+- 320
+- 320
+names:
+  0: Human
+args:
+  batch: 1
+  quantize: null
+channels: 3
+end2end: false

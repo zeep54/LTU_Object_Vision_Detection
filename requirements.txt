@@ -8,3 +8,4 @@ ultralytics==8.4.177
 roboflow==1.7.1
 dill==0.4.1
 gpiod==2.5.0
+ncnn==1.0.20261020
