@@ -131,10 +131,10 @@ TOO_CLOSE_TINT_ALPHA = 0.35
 # It beeps once for BUZZER_DURATION_S seconds when a human appears; someone
 # staying in view doesn't keep it beeping.
 BUZZER_PIN = 23
-BUZZER_DURATION_S = 0.5
-# Keep the LEDs as they are this long after the last detection so a single
+BUZZER_DURATION_S = 2.0
+# Keep the LEDs on for 3 s after the last detection. This also means a single
 # missed frame doesn't make them flicker.
-DETECTION_HOLD_S = 0.5
+DETECTION_HOLD_S = 3.0
 
 WINDOW_NAME = "Human Detection"
 QUIT_KEY = ord(" ")
@@ -282,7 +282,7 @@ class PiCamera:
     doesn't care which one it is using.
     """
 
-    def __init__(self, width: int = 640, height: int = 480, fps: int = 30) -> None:
+    def __init__(self, width: int = 640, height: int = 480, fps: int = 60) -> None:
         if shutil.which("rpicam-vid") is None:
             raise RuntimeError("rpicam-vid not found; is the Pi camera stack installed?")
         self._width, self._height = width, height
